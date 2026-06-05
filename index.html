@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+
+  <div class="logo">My Portfolio</div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('about')">About</a></li>
+      <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+      <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="section active-section home-section">
+    <div class="home-text">
+      <h1>WELCOME TO MY WORLD</h1>
+      <h2>Web Developer Student</h2>
+      <p>
+        I am learning HTML, CSS, and JavaScript. This portfolio website shows my skills,
+        projects and contact information.
+      </p>
+
+      <button onclick="showSection('projects')" class="btn">View My Projects</button>
+    </div>
+
+    <div class="home-image">
+      <img src="./images/ma.png" alt="My Profile Image">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section about-section">
+    <div class="about-image">
+      <img src="./images/ma.png" alt="About Image">
+    </div>
+
+    <div class="about-text">
+      <h1>About Me</h1>
+
+      <p>
+        I am a passionate development student learning HTML, CSS,
+        JavaScript, GitHub, and Netlify deployment.
+      </p>
+
+      <p>
+        I enjoy building responsive websites and improving my programming skills.
+      </p>
+
+      <h3>Education</h3>
+      <p>Diploma of Computer Science</p>
+
+      <h3>Career Interests</h3>
+      <p>Web Development, UI Design and Software Engineering</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section skills-section">
+    <h1>My Skills</h1>
+
+    <div class="skills-container">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">GitHub</div>
+      <div class="skill-box">Netlify</div>
+      <div class="skill-box">VS Code</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+<section id="projects" class="section projects-section">
+  <h1>My Projects</h1>
+
+  <div class="projects-container">
+
+    <div id="project-one" class="project-box">
+      <h2>Project 1</h2>
+      <p>Personal Portfolio Website using HTML, CSS, and JavaScript.</p>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+    <div id="project-two" class="project-box">
+      <h2>Project 2</h2>
+      <p>Student Result Checker Website.</p>
+      <p><strong>Technologies:</strong> HTML, CSS, PHP, MySQL</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+    <div id="project-three" class="project-box">
+      <h2>Project 3</h2>
+      <p>Simple Login Page Design.</p>
+      <p><strong>Technologies:</strong> HTML, CSS</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+ <!-- CONTACT SECTION -->
+<section id="contact" class="section contact-section">
+  <h1>Contact Me</h1>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Enter your name" required>
+    <input type="email" placeholder="Enter your email" required>
+    <textarea placeholder="Write yor message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Email: luxthomaslux.com</p>
+    <p>Phone: +211 914465687</p>
+    <p>GitHub: github.com/yourname</p>
+      </div>
+</section>
+
+  <footer class="footer">
+  <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
